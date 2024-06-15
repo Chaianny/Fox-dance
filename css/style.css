@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.game-board {
+    width: 50%;
+    height: 300px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cenario {
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+}
+
+.fox {
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    animation:
+}
