@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .game-board {
     width: 50%;
     height: 300px;
@@ -24,5 +23,36 @@
     width: 200px;
     position: absolute;
     bottom: 0px;
-    animation:
+    left: 30%;
+    animation: fox-animation 2s infinite, turtwirl 2s infinite;
+}
+
+.tumbleweed {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: tumbleweed-animation 3s infinite linear;
+}
+
+
+@keyframes tumbleweed-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes fox-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
 }
