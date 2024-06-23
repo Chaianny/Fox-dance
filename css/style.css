@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+}
 .game-board {
     width: 50%;
     height: 300px;
@@ -34,7 +39,13 @@
     animation: tumbleweed-animation 3s infinite linear;
 }
 
-
+.kirby{
+    position: absolute; top: 75%;
+    bottom: 0;
+    width: 80px;
+    animation: kirby-animation 3s infinite linear;
+    top: 10%;
+}
 @keyframes tumbleweed-animation {
     from {
         right: -80px;
@@ -42,6 +53,24 @@
 
     to {
         right: 100%;
+    }
+}
+
+@keyframes kirby-animation{
+    from{
+        left: -80px;
+    }
+    to{
+        left: 100%;
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotateX(40deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
 
